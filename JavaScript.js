@@ -29,14 +29,14 @@ blur2.addEventListener("mouseover",()=>{
 const Choices=document.getElementsByClassName("conti")
 Choices[0].addEventListener("click",()=>{
     Picked=0
-    console.log("Theek hai, aab Play button Dba")
+    console.log("Theek hai")
     blur1.style.opacity="50%"
     blur2.style.opacity="50%"
 })
 Choices[1]
 .addEventListener("click",()=>{
     Picked=1
-    console.log("Theek hai, aab Play button Dba")
+    console.log("Theek hai")
     blur0.style.opacity="50%"
     blur2.style.opacity="50%"
 
@@ -44,7 +44,7 @@ Choices[1]
 Choices[2]
 .addEventListener("click",()=>{
     Picked=2
-    console.log("Theek hai, aab Play button Dba")
+    console.log("Theek hai")
     blur0.style.opacity="50%"
     blur1.style.opacity="50%"
 })
@@ -54,8 +54,8 @@ btn.addEventListener("click",()=>{
         result=Math.floor(Math.random()*3);
         console.log(result)
         if (result===Picked){
-            console.log("Game Draw Ho Gaya Bete")
-            btn.innerText="Game Draw Ho Gaya Bete"
+            console.log("Game Draw ")
+            btn.innerText="Game Draw "
             btn.style.backgroundColor="White"
 
             
@@ -73,17 +73,17 @@ btn.addEventListener("click",()=>{
                 GAMEWINNER=result==0?false:true;
             }
             if (GAMEWINNER==true){
-                console.log("Jeet Gya Bete")
+                console.log("Won!!!")
                 
-                btn.innerText="Jeet Gya Bete"
+                btn.innerText="Won!!!!!"
                 btn.style.backgroundColor="Lime"
                 uscore++
                 Uscore.innerText=uscore
                 
             }
             else{                
-                console.log("Haar Gya Tu")
-                btn.innerText="Haar Gya Tu"
+                console.log("Lost!!!!")
+                btn.innerText="Lost!!!!"
                 btn.style.backgroundColor="red"
                 cscore++
                 Cscore.innerText=cscore
